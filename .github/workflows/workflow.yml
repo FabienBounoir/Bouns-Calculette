@@ -3,15 +3,15 @@ name: Github Pages Deploy
 on:
   push:
     branches:
-      - "master"
+      - "master"  # lors d'un push sur la branch master
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # build realisé sur la derniere version d'ubuntu
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [16.x] # utilisation de la derniere version 16 de node
 
     steps:
       - name: Checkout
