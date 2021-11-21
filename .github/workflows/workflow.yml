@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x] # utilisation de la derniere version 16 de node
+        node-version: [15.x] # utilisation de la derniere version 15 de node
 
     steps:
       - name: Checkout
